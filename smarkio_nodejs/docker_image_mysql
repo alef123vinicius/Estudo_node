@@ -1,0 +1,13 @@
+docker run --name mysql -v /var/lib/mysql-smarkio:/var/lib/mysql -p 3306:3306 -p 33060:33060 -e MYSQL_ROOT_PASSWORD=a1a2a3a4 -d mysql
+
+docker ps
+
+docker container inspect [id_container]
+
+"IPAddress": "172.17.0.2",
+
+para acessar o bash
+
+docker exec -it [id_container] bash
+
+sudo mysql -u root -h 172.17.0.2 -P 3306 -p 
